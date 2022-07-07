@@ -31,7 +31,7 @@ int GetNumber(string message)
 }
 
 // Метод заполняет случайными числами массив, выводит его в консоль, возвращает разницу между максимальным и минимальным значением
-int FillAndPrintArray(ref int[] array)
+int FillAndPrintArray(int[] array)
 {
     Random rnd = new Random();
     int max = 0;
@@ -51,5 +51,5 @@ int FillAndPrintArray(ref int[] array)
 
 int number = GetNumber("Введите размер массива: ");
 int[] array = new int[number];
-int diff = FillAndPrintArray(ref array);
+int diff = FillAndPrintArray(array);
 Console.WriteLine($"Разница между максимальным и минимальным элементами в массиве: {diff}.");
